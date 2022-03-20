@@ -17,3 +17,8 @@
  */
 
 #include "rgb.h"
+
+void keyboard_post_init_kb(void) {
+    keyboard_post_init_user();
+    setPinInput(B12);
+}
